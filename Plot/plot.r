@@ -1,10 +1,12 @@
+library(coda)
+par(mfrow = c(1, 1))
 
 # Caterpillow of Variable
 par(mfrow = c(2, 2))
 plot(c(1:10000),store[2,],type = "l",xlab="iteration",ylab="Variable 2",main="Caterpillow plot of Gibbs")
-xyplot(mcmc(re.hmc1[,2]),ylab="Variable 2",main="Caterpillow plot of HMC")
+xyplot(mcmc(re.hmc1[,2]),ylab="Variable 2",main="caterpillar plot of HMC")
 plot(c(1:10000),store[40,],type = "l",xlab="iteration",ylab="Variable 40",main="Caterpillow plot of Gibbs")
-xyplot(mcmc(re.hmc1[,40]),ylab="Variable 40",main="Caterpillow plot of HMC")
+xyplot(mcmc(re.hmc1[,40]),ylab="Variable 40",main="caterpillar plot of HMC")
 
 # Traceplot
 par(mfrow = c(1, 2))
