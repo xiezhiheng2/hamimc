@@ -45,6 +45,10 @@ hmc.1<-function(x,gradE,findE,L,Tau,epsilon){
   return (x.trace);
 }
 
+#library(coda)
+#iteration = 10000
 #re.hmc1<-hmc.1(x=(1:50),gradE,findE,iteration,500,0.05);
-#xyplot(mcmc(re.hmc1[,1:5]))
+#xyplot(mcmc(re.hmc1[,40]))
+
+
 
